@@ -27,7 +27,7 @@ html, body {
     font-weight: 200;
     line-height: 50px;
     margin:0;
-    margin-bottom: 2.5%;
+    margin-bottom: 10%;
   }
   
   
@@ -48,7 +48,8 @@ html, body {
   #projects{
     position: relative;
     display: block;
-    background-color: grey;
+    background-color: #333;
+    color: white;
     z-index: 1;
   }
   #contact{
@@ -58,6 +59,13 @@ html, body {
     z-index: 1;
   }
 
+  #footer{
+    position: relative;
+    display: block;
+    background-color: #666;
+    color: white;
+    z-index: 1;
+  }
   
   .Content {
     max-width: 750px;
@@ -102,7 +110,7 @@ html, body {
     height: 100vh;
     justify-content: center;
     align-items: center;
-    transform: translateZ(-1px) scale(2);
+    transform: translateZ(-.9px) scale(2);
     background-image: url(header.jpg);
     background-size: cover;
     background-repeat: no-repeat;
