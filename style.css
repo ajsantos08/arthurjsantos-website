@@ -1,5 +1,8 @@
-html, body {
-    font-family: Open Sans;
+
+  @import url('https://fonts.googleapis.com/css?family=Bree+Serif|Roboto|Roboto+Mono:400,800');
+
+  html, body {
+
     font-size: 18px;
     line-height: 28px;
     scroll-behavior: smooth;
@@ -7,8 +10,8 @@ html, body {
   }
   
   h1 {
-    letter-spacing: -15px;
-    font-family: Open Sans;
+    letter-spacing: -7px;
+    
     color: white;
     text-align: center;
     font-size: 200px;
@@ -20,7 +23,7 @@ html, body {
 
   h4 {
     letter-spacing: -3.5px;
-    font-family: Open Sans;
+    font-family: 'Roboto Mono', monospace;
     color: white;
     text-align: center;
     font-size: 50px;
@@ -30,8 +33,12 @@ html, body {
     margin-bottom: 10%;
   }
   
+  h2{
+    text-align: center;
+  }
   
   .MainContainer {
+    
     perspective: 1px;
     transform-style: preserve-3d;
     height: 100vh;
@@ -40,10 +47,17 @@ html, body {
   }
   
   .ContentContainer {
+    font-family: 'Roboto', sans-serif;
     position: relative;
     display: block;
     background-color: white;
     z-index: 1;
+  }
+
+  #about{
+    text-align: justify;
+    -moz-text-align-last: center;
+    text-align-last: center;
   }
   #projects{
     position: relative;
@@ -127,6 +141,45 @@ html, body {
     font-weight: 400;
     line-height: 100px;
   }
+
+  .imgcontainer{
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2px;
+    padding: 1%;
+  }
+
+  img{
+    width:100%;
+  }
+
+  .fa {
+    margin: 10px 10px;
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    background-color: #333;
+    color: white;
+  }
   
-  @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,800');
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+  #contactcontainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  #footer{
+    text-align: center;
+  }
+  
+
   
