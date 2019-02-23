@@ -9,9 +9,7 @@
     <title>Home</title>
 </head>
 <body>
-    
     <div class="MainContainer">
-        
         <div class="NavContainer">
             <ul>
                 <li><a href="#contact">Contact</a></li>
@@ -19,12 +17,12 @@
                 <li><a href="#about">About</a></li>
             </ul>
         </div>
-        <div class="ParallaxContainer" id="top">
+        <div id="top" class="ParallaxContainer" >
             <h1>Arthur Santos</h1>
             <h4>compsci student</h4>
         </div>
         <div id="about"class="ContentContainer">
-            <div class="Content" id="about">
+            <div class="Content">
                 <h2>About</h2>
                 <p>I'm a Computer Science major studying at the University of Calgary. I'm mostly interested in front end development for web and mobile and a little game development. Currently learning React framework for JavaScript.
                 </p>
@@ -47,7 +45,6 @@
                     <h3>Inventory</h3>
                     Web application for keeping track and modifying clothing stock for database course.<br>
                     (MySQL, PHP, HTML, CSS, Bootstrap)
-                
                     <div class="imgcontainer">
                         <img src="Inventory-login.png">
                         <img src="Inventory.png">
@@ -74,11 +71,9 @@
                     <h3>shuffl</h3>
                     Web application for listening to music while chat with friends for web systems course.<br> 
                     (HTML, SASS, JavaScript, Node.js, Express for Node.js, MongoDB)<br>
-
                     WIP
                     <div class="imgcontainer">
                             <img src="shuffl.png">
-
                     </div>
                 </p>
             </div>
@@ -97,21 +92,19 @@
         </div>
         <div id="footer" class="ContentContainer">
             <div class="Content">
-                    Copyright ©2019 My Portfolio by Arthur Santos.
+                Copyright ©2019 My Portfolio by Arthur Santos.
             </div>
         </div>
      </div>
 </body>
 <script>
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth', block: 'start'
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth', block: 'start'
+            });
         });
     });
-});
-
 </script>
 </html>
