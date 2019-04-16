@@ -21,6 +21,14 @@
     margin-top:auto;
   }
 
+  a:link{
+    text-decoration: none;
+  }
+
+  a:visited{
+   color:white;
+  }
+
   h4 {
     letter-spacing: -3.5px;
     font-family: 'Roboto Mono', monospace;
