@@ -150,7 +150,7 @@
   }
 
 
-  .imgcontainer img{  
+  .imgcontainer img,  video{  
     display: block;
     margin: 0 auto;
     max-height:500px;
